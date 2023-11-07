@@ -28,7 +28,7 @@ public class player : MonoBehaviour
     {
         anim.SetBool("Swalk", false);
         anim.SetBool("walk foward", false);
-        float speed = 2f;
+        float speed = 6f;
 
         if (Input.GetKey("d") == true)
         {
