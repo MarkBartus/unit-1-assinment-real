@@ -10,6 +10,7 @@ public class player : MonoBehaviour
     Rigidbody2D rb;
     Animator anim;	// ***
     SpriteRenderer spi;
+    HealthManager health;
     // Start is called before the first frame update
     
     void Start()
@@ -20,6 +21,7 @@ public class player : MonoBehaviour
         anim = GetComponent<Animator>(); // ***
         spi = GetComponent<SpriteRenderer>();
         helper = gameObject.AddComponent<HelperScript>();
+        health = GameObject.FindWithTag("Health").GetComponent<HealthManager>();
 
     }
 
@@ -61,6 +63,13 @@ public class player : MonoBehaviour
 
 
 
+    }
+    private void OnTriggerEnter2D(Collider2D collider)
+    {
+        if (collider.gameObject.tag == "Enemy")
+        {
+            health.TakeDamage(20);
+        }
     }
 }
 

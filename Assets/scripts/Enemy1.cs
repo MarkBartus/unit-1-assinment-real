@@ -14,15 +14,20 @@ public class Enemy1 : MonoBehaviour
     private float distance;
     bool Attack;
     bool movement;
-    
+    public float enemyHealth = 100f;
+
     public float AggroRange = 6f;
     public float InRange = 15f;
     // Start is called before the first frame update
+
     void Start()
+
     {
         anim = GetComponent<Animator>();
         rb = this.GetComponent<Rigidbody>();
+        
     }
+
 
     // Update is called once per frame
     void Update()
@@ -68,7 +73,24 @@ public class Enemy1 : MonoBehaviour
         }
         return Attack;
     }
+    public void TakeDamage(float damage)
+    {
+        enemyHealth -= damage;
     
+    }
+    private void OnTriggerEnter2D(Collider2D collider)
+    {
+        if(collider.gameObject.tag == "bullet")
+        {
+            enemyHealth.TakeDamage(20)
+            if (enemyHealth < 1)
+            {
+                Destroy(this.gameObject);
+            }
+        }
+        
+    }
+
 
 }
 

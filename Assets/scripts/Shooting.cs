@@ -35,4 +35,11 @@ public class Shooting : MonoBehaviour
 
         }
     }
+    private void OnTriggerEnter2D(Collider2D collider)
+    {
+        if(collider.gameObject.tag == "Enemy")
+        {
+            Destroy(bullet);
+        }
+    }
 }

@@ -1,13 +1,10 @@
 fileFormatVersion: 2
-guid: bafa16214084ca544a998e3e9cf9a419
+guid: 2600db41fb0afae468d95b74596215d8
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1165223613982985705
-    second: walk idle_0
-  - first:
-      213: 6327813455281497496
-    second: walk idle_1
+      213: 3836954968553550457
+    second: sky_0
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -161,13 +158,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: walk idle_0
+      name: sky_0
       rect:
         serializedVersion: 2
-        x: 146
-        y: 219
-        width: 640
-        height: 662
+        x: 487
+        y: 0
+        width: 1027
+        height: 1000
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -175,29 +172,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 712b5a4fb4b44dfe0800000000000000
-      internalID: -1165223613982985705
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: walk idle_1
-      rect:
-        serializedVersion: 2
-        x: 1037
-        y: 219
-        width: 640
-        height: 662
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 895adf6bfc8e0d750800000000000000
-      internalID: 6327813455281497496
+      spriteID: 972fdcff63a9f3530800000000000000
+      internalID: 3836954968553550457
       vertices: []
       indices: 
       edges: []
@@ -212,9 +188,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      walk idle_0: -1165223613982985705
-      walk idle_1: 6327813455281497496
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
