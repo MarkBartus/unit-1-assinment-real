@@ -39,7 +39,7 @@ public class Shooting : MonoBehaviour
     {
         if(collider.gameObject.tag == "Enemy")
         {
-            Destroy(bullet);
+            Destroy(GameObject.FindWithTag("bullet"));
         }
     }
 }

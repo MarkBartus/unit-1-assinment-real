@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class HealthManager : MonoBehaviour
 {
@@ -15,11 +16,12 @@ public class HealthManager : MonoBehaviour
     }
 
     // Update is called once per frame
+    
     void Update()
     {
         if (HealthAmount <= 0)
         {
-            Application.LoadLevel(Application.loadedLevel);
+            SceneManager.LoadScene("SampleScene");
         }
         if (Input.GetKeyDown(KeyCode.Space))
         {

@@ -6,7 +6,7 @@ public class player : MonoBehaviour
 {
     public GameObject weapon;
 
-    HelperScript helper;
+    
     Rigidbody2D rb;
     Animator anim;	// ***
     SpriteRenderer spi;
@@ -20,7 +20,7 @@ public class player : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>(); // ***
         spi = GetComponent<SpriteRenderer>();
-        helper = gameObject.AddComponent<HelperScript>();
+        
         health = GameObject.FindWithTag("Health").GetComponent<HealthManager>();
 
     }
